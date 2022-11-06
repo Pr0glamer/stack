@@ -33,6 +33,7 @@ public class MyStack implements Stackable {
         myStack.push(2);
         myStack.push(3);
         myStack.printStack();
+        myStack.printHead();
     }
 
 
@@ -66,6 +67,9 @@ public class MyStack implements Stackable {
         return element;
     }
 
+    public void printHead() {
+        System.out.println(head.element);
+    }
 
     @Override
     public int size() {
