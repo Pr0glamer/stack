@@ -1,3 +1,5 @@
+import java.util.Optional;
+
 public class MyStack implements Stackable {
 
     private static class Node {
@@ -9,6 +11,19 @@ public class MyStack implements Stackable {
         }
 
     }
+
+    class StackIsFullException extends Exception {
+        public StackIsFullException(String message) {
+            super(message);
+        }
+    }
+
+    class StackIsEmptyException extends Exception {
+        public StackIsEmptyException(String message) {
+            super(message);
+        }
+    }
+
 
     public MyStack(int MAX_SIZE) {
         this.MAX_SIZE = MAX_SIZE;
@@ -27,7 +42,7 @@ public class MyStack implements Stackable {
        }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws StackIsFullException {
         MyStack myStack = new MyStack(5);
         myStack.push(1);
         myStack.push(2);
@@ -39,11 +54,10 @@ public class MyStack implements Stackable {
 
 
     @Override
-    public void push(Object element) {
+    public void push(Object element) throws StackIsFullException {
 
         if(isFull()){
-            System.out.println("Stack is full");
-            return;
+            throw new StackIsFullException("Stack if full");
         }
 
         Node node = new Node(element);
@@ -56,15 +70,25 @@ public class MyStack implements Stackable {
 
 
     @Override
-    public Object pop() {
+    public Object pop() throws StackIsEmptyException {
         if (isEmpty()) {
-            System.out.println("Stack is empty");
-            return null;
+            throw new StackIsEmptyException("Stack is empty");
         }
         Object element = head.element;
         head = head.next;
         size--;
         return element;
+    }
+
+    @Override
+    public Optional<Object> pop_element() throws StackIsEmptyException {
+        if (isEmpty()) {
+            throw new StackIsEmptyException("Stack is empty");
+        }
+        Object element = head.element;
+        head = head.next;
+        size--;
+        return Optional.of(element);
     }
 
     public void printHead() {

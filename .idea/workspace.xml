@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca485aa6-5eb5-4c24-85dc-bc85959f8f54" name="Changes" comment="Added logic &amp; tests" />
+    <list default="true" id="ca485aa6-5eb5-4c24-85dc-bc85959f8f54" name="Changes" comment="Added printHead">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stackable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stackable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyStackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyStackTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,8 +42,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20221118_0001",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/java/nix/stack",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
@@ -50,7 +57,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyStack">
+  <component name="RunManager" selected="JUnit.MyStackTest.whenPopElement_ReturnsOptional">
     <configuration name="MyStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyStack" />
       <module name="stack" />
@@ -67,8 +74,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyStackTest.whenPopElement_ReturnsOptional" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stack" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyStackTest" />
+      <option name="METHOD_NAME" value="whenPopElement_ReturnsOptional" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyStackTest.whenStackIsEmpty_thenThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stack" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyStackTest" />
+      <option name="METHOD_NAME" value="whenStackIsEmpty_thenThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyStackTest.whenStackIsFull_thenThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stack" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyStackTest" />
+      <option name="METHOD_NAME" value="whenStackIsFull_thenThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyStackTest.whenPopElement_ReturnsOptional" />
+        <item itemvalue="JUnit.MyStackTest.whenStackIsEmpty_thenThrowException" />
+        <item itemvalue="JUnit.MyStackTest.whenStackIsFull_thenThrowException" />
         <item itemvalue="Application.MyStack" />
         <item itemvalue="JUnit.MyStackTest" />
       </list>
@@ -82,7 +122,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667714678042</updated>
-      <workItem from="1667714681037" duration="2419000" />
+      <workItem from="1667714681037" duration="4527000" />
+      <workItem from="1668621522695" duration="741000" />
+      <workItem from="1668751240952" duration="3620000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1667714813774</created>
@@ -98,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667737954051</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added printHead">
+      <created>1667738189237</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667738189237</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +167,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Added logic &amp; tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added logic &amp; tests" />
+    <MESSAGE value="Added printHead" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added printHead" />
   </component>
 </project>
